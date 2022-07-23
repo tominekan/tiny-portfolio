@@ -1,0 +1,7 @@
+.portfolio_container {
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.25);
+    width: 90vw;
+    height: 85vh;
+    border-radius: 50px;
+    display: flex;
+}
