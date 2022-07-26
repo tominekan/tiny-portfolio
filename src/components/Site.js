@@ -1,9 +1,12 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import { ThemeContext } from "../ThemeContext";
 import PortfolioContainer from "./PortfolioContainer";
 
 const Site = () => {
     const { colors } = useContext(ThemeContext);
+    useEffect(() => {
+        document.title = "Tiny Portfolio"
+    })
     return (
         <div style={{
             height: "100vh",
