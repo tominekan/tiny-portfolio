@@ -64,7 +64,7 @@ const ContactForm = () => {
                     </div>
                     <div className={styles.text_container}>
                         <MdTextFormat style={iconStyle}/>
-                        <div className={styles.textfield}>
+                        <div className={styles.textfield_big}>
                             <textarea
                             placeholder='Message'
                             className={styles.big_input}

@@ -3,7 +3,7 @@
     background-color: rgba(0, 0, 0, 0);
     outline: none;
     height: 45px;
-    width: clamp(100px, 20vw, 500px);
+    width: clamp(100px, 30vw, 500px);
     border-radius: 7.5px;
     padding-left: 10px;
     font-size: medium;
@@ -17,6 +17,17 @@
 }
 
 .textfield:focus-within {
+    border: 1px solid black;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.25);
+}
+
+.textfield_big {
+    width: max-content;
+    height: max-content;
+    border-radius: 7.5px;
+    margin-bottom: 10px;
+}
+.textfield_big:focus-within {
     border: 1px solid black;
     box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.25);
 }
@@ -40,7 +51,7 @@
     background-color: rgba(0, 0, 0, 0);
     outline: none;
     height: 150px;
-    width: clamp(100px, 20vw, 500px);
+    width: clamp(100px, 30vw, 500px);
     border-radius: 7.5px;
     padding-left: 10px;
     padding-top: 10px;
@@ -49,7 +60,7 @@
 
 .modal {
     width: clamp(430px, 50vw, 850px);
-    height: clamp(325px, 55vh, 645px);
+    height: clamp(325px, 60vh, 645px);
     position: fixed;
     top: 50%;
     left: 50%;
