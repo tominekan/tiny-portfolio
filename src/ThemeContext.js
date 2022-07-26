@@ -1,3 +1,4 @@
+"use strict"
 import React, { createContext, useState } from "react";
 
 const ThemeContext = createContext();
@@ -10,6 +11,7 @@ const ThemeProvider = ({ children }) => {
         secondary: "#4D616B",
         smol_background: "#E1E7EA",
         text: "#000000",
+        contact_background: "#BEC8CE",
     }
 
     // Dark Color scheme
@@ -18,7 +20,8 @@ const ThemeProvider = ({ children }) => {
         primary: "#4D616B",
         secondary: "#E6EAEC",
         smol_background: "#7E949F",
-        text: "#FFFFFF"
+        text: "#FFFFFF",
+        contact_background: "#354A53",
     }
 
     // Defaults to light mode on first load
@@ -37,11 +40,18 @@ const ThemeProvider = ({ children }) => {
 
 
 
-      
-
     // Defaults to light mode (on first load)
     const [colors, setColors] = useState(getInitialMode());
+
+    // Controls if the contact button is shown
     const [contactShow, setContactShow] = useState(false);
+
+    // Content of Mail
+    const [mailData, setMailData] = useState({
+        name: "",
+        email: "",
+        message: ""
+    })
 
     const changeTheme = () => {
         // Light -> Dark Mode
@@ -54,10 +64,17 @@ const ThemeProvider = ({ children }) => {
         }
     };
 
+    const openContact = () => {
+        setContactShow(true)
+    }
 
+    // Close Contact haha (bum-ass joke)
+    const closeContact = () => {
+        setContactShow(false)
+    }
 
     return (
-        <ThemeContext.Provider value={{colors, changeTheme}}>
+        <ThemeContext.Provider value={{colors, changeTheme, contactShow, openContact, closeContact, mailData, setMailData}}>
             {children}
         </ThemeContext.Provider>
     )

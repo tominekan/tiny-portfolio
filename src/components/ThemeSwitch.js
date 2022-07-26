@@ -18,7 +18,8 @@ const ThemeSwitch = () => {
             offHandleColor="#4D616B"
             onHandleColor="#E6EAEC"
             checkedIcon={<MdOutlineLightMode style={{display: "flex", justifyContent: "center", alignItems: "center", height: "100%", width: "80%", color: "#E6EAEC"}}/>}
-            uncheckedIcon={<MdOutlineDarkMode style={{display: "flex", justifyContent: "center", alignItems: "center", height: "100%", width: "80%"}}/>}/>
+            uncheckedIcon={<MdOutlineDarkMode style={{display: "flex", justifyContent: "center", alignItems: "center", height: "100%", width: "80%"}}/>}
+            handleDiameter={20}/>
         </label>
     )
 }

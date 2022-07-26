@@ -1,7 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter&family=Roboto+Flex:opsz@8..144&display=swap');
 .contact_button {
-    margin-left: 78vw;
-    margin-bottom: 15px;
     border: none;
     height: 50px;
     width: 110px;
@@ -11,8 +8,10 @@
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    font-family: "Roboto Flex", "Inter", sans-serif;
     font-size: medium;
+    position: absolute;
+    top: 80%;
+    left: 80%;
 }
 
 .contact_button:hover {
@@ -24,6 +23,23 @@
 }
 
 .toggle_switch {
-    margin-left: 81.5vw;
-    margin-top: 15px;
+    position: absolute;
+    top: 10%;
+    left: 83%;
+}
+
+.send_button {
+    border: none;
+    height: 40.9px;
+    width: 90px;
+    border-radius: 12.27px;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: medium;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
