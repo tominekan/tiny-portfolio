@@ -49,13 +49,13 @@
         position: static;
         align-self: flex-end;
         margin-right: 15px;
-        margin-top: 5vh;
+        margin-top: 1.5vh;
     }
 
     .toggle_switch {
         position: static;
         align-self: flex-end;
-        margin-bottom: 5vh;
+        margin-bottom: 1.5vh;
         margin-right: 15px;
     }
 }

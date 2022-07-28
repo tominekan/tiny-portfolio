@@ -36,7 +36,7 @@ const ContactForm = () => {
                         <MdOutlineAccountCircle style={iconStyle}/>
                         <div className={styles.textfield}>
                             <input
-                            type="email"
+                            type="text"
                             placeholder='Name'
                             className={styles.smol_input}
                             style={dynamicStyle}
@@ -51,7 +51,7 @@ const ContactForm = () => {
                         <MdOutlineEmail style={iconStyle}/>
                         <div className={styles.textfield}>
                             <input
-                            type="text"
+                            type="email"
                             placeholder='Email'
                             className={styles.smol_input}
                             style={dynamicStyle}
